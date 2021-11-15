@@ -11,9 +11,10 @@
   --color-blue: #77aace;
   --color-yellow: #ffeb60;
   --color-light-yellow: #fff7d1;
-  --color-dark-yellow: #ffeb60;
+  --color-dark-yellow: #ffe04b;
   --color-orange: #feb546;
   --color-black: #000000;
+  --color-light-black: #242424;
 
   /* Font size */
   --font-large: 48px;
