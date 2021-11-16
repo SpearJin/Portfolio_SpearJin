@@ -21,7 +21,7 @@ h1 {
 h2 {
   font-size: var(--font-medium);
   font-weight: var(--weight-semi-bold);
-  color: var(--color-black);
+  color: var(--color-light-black);
   margin: 8px 0;
 }
 
