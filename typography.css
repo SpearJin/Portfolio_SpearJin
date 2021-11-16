@@ -33,7 +33,7 @@ h3 {
 }
 
 p {
-  font-size: var(--font-micro);
+  font-size: var(--font-regular);
   font-weight: var(--weight-regular);
   color: var(--color-black);
   margin: 4px 0;
