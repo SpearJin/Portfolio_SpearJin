@@ -80,6 +80,10 @@
 }
 
 /* About */
+.about.section {
+  position: relative;
+}
+
 .section {
   padding: 48px;
   background-color: var(--color-yellow);
@@ -155,5 +159,53 @@
   margin: 15px 0;
 }
 
-.major__license__description {
+.divider__line {
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+  content: '';
+  height: 3px;
+  width: 100%;
+  background-color: var(--color-dark-yellow);
+}
+
+/* Skills */
+
+.skills h2 {
+  margin-top: 40px;
+}
+
+.skillset {
+  padding: 25px 0;
+  color: var(--color-white);
+  background-color: var(--color-dark-gray);
+}
+
+.skill__title {
+  font-size: ;
+  color: white;
+}
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 10px;
+}
+
+.skill__description {
+  display: flex;
+  justify-content: space-between;
+  margin: 8px 65px;
+}
+
+.skill__bar {
+  width: 90%;
+  height: 2px;
+  margin: auto;
+  background-color: var(--color-gray);
+}
+
+.skill__value {
+  height: 2px;
+  background-color: var(--color-orange);
 }
