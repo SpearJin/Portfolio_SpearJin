@@ -82,11 +82,11 @@
 /* About */
 .about.section {
   position: relative;
+  background-color: var(--color-yellow);
 }
 
 .section {
   padding: 48px;
-  background-color: var(--color-yellow);
   text-align: center;
 }
 
@@ -171,19 +171,22 @@
 
 /* Skills */
 
+.skills.section {
+  background-color: var(--color-yellow);
+}
+
 .skills h2 {
   margin-top: 40px;
+}
+
+.skill__title {
+  color: white;
 }
 
 .skillset {
   padding: 25px 0;
   color: var(--color-white);
   background-color: var(--color-dark-gray);
-}
-
-.skill__title {
-  font-size: ;
-  color: white;
 }
 
 .skill {
@@ -208,4 +211,109 @@
 .skill__value {
   height: 2px;
   background-color: var(--color-orange);
+}
+
+/* Work */
+.work.section {
+  background-color: var(--color-white);
+}
+
+.work h3 {
+  margin-top: 40px;
+}
+
+.work__categories {
+  margin-top: 40px;
+}
+
+.category {
+  position: relative;
+  padding: 15px 45px;
+  margin: 0 5px;
+  border-radius: 6px;
+  border: 1px solid var(--color-dark-gray);
+  color: var(--color-dark-gray);
+  font-size: 20px;
+}
+
+.category__count {
+  display: inline-block;
+  position: absolute;
+  top: -20%;
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  border-radius: 50%;
+  background-color: salmon;
+  color: white;
+  font-size: 16px;
+  opacity: 0;
+  transition: all var(--ani-duration-sec) ease-in;
+}
+
+.category.selected .category__count,
+.category:hover .category__count {
+  top: 0;
+  opacity: 1;
+}
+
+.category.selected,
+.category:hover {
+  border: transparent;
+  color: var(--color-light-black);
+  background-color: var(--color-yellow);
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+.project {
+  position: relative;
+  width: 33%;
+  margin: 2px;
+  background-color: var(--color-light-gray);
+}
+
+.project__img {
+  max-width: 250px;
+  height: 200px;
+}
+
+.project__description {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  bottom: -10%;
+  background-color: var(--color-gray);
+  opacity: 0;
+  transition: all var(--ani-duration-sec) ease-in;
+  color: var(--color-light-gray);
+}
+
+.project__description:hover {
+  opacity: 0.8;
+  transform: translateY(-10%);
+}
+
+.project__description span {
+  padding: 10px 0;
+}
+
+.project__description__title::after {
+  display: block;
+  margin: auto;
+  height: 1px;
+  width: 80%;
+  content: '';
+  background-color: var(--color-light-gray);
+  transform: translateY(10px);
 }
