@@ -317,3 +317,34 @@
   background-color: var(--color-light-gray);
   transform: translateY(10px);
 }
+
+/* Contact */
+.contact.section {
+  color: var(--color-dark-gray);
+  background-color: var(--color-dark-yellow);
+}
+
+.section__container h2 {
+  font-size: 32px;
+}
+
+.section__container h3 {
+  font-size: 25px;
+}
+
+.section__container h2,
+.section__container h3 {
+  padding: 10px 0;
+  color: var(--color-dark-gray);
+}
+
+.link i {
+  padding: 10px 0 20px;
+  font-size: 45px;
+  transition: all var(--ani-duration-sec) ease-in;
+}
+
+.link i:hover {
+  transform: scale(1.1);
+  color: var(--color-dark-gray);
+}
