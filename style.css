@@ -31,7 +31,7 @@
 }
 
 .navbar__menu__list {
-  padding-left: 15px;
+  padding-left: 20px;
   cursor: pointer;
   transition: all var(--ani-duration-sec) ease-in;
 }
@@ -42,7 +42,7 @@
 }
 
 /* Home */
-.home {
+#home {
   padding: 60px 0;
   background-color: var(--color-light-gray);
   text-align: center;
@@ -80,7 +80,8 @@
 }
 
 /* About */
-.about.section {
+
+#about.section {
   position: relative;
   background-color: var(--color-yellow);
 }
@@ -171,7 +172,7 @@
 
 /* Skills */
 
-.skills.section {
+#skills.section {
   background-color: var(--color-yellow);
 }
 
@@ -214,7 +215,7 @@
 }
 
 /* Work */
-.work.section {
+#work.section {
   background-color: var(--color-white);
 }
 
@@ -319,7 +320,7 @@
 }
 
 /* Contact */
-.contact.section {
+#contact.section {
   color: var(--color-dark-gray);
   background-color: var(--color-dark-yellow);
 }
