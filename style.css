@@ -7,9 +7,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
+  width: 100%;
   padding: 0.5em 1em;
   background-color: var(--color-dark-yellow);
+  /* background-color: #ffeb60;
+  opacity: 0.9; */
   color: var(--color-light-black);
+  z-index: 10;
 }
 
 .navbar__logo {
@@ -43,7 +48,7 @@
 
 /* Home */
 #home {
-  padding: 60px 0;
+  padding: 100px 0;
   background-color: var(--color-light-gray);
   text-align: center;
 }

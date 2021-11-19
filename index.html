@@ -23,6 +23,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
   </head>
   <body>
     <!-- Navbar -->
@@ -32,12 +33,11 @@
         <p>SpearJin</p>
       </a>
       <ul class="navbar__menu">
-        <li class="navbar__menu__list">홈</li>
-        <li class="navbar__menu__list">자기소개</li>
-        <li class="navbar__menu__list">기술</li>
-        <li class="navbar__menu__list">프로젝트</li>
-        <li class="navbar__menu__list">추천서</li>
-        <li class="navbar__menu__list">연락처</li>
+        <li class="navbar__menu__list" data-link="#home">홈</li>
+        <li class="navbar__menu__list" data-link="#about">자기소개</li>
+        <li class="navbar__menu__list" data-link="#skills">기술</li>
+        <li class="navbar__menu__list" data-link="#work">프로젝트</li>
+        <li class="navbar__menu__list" data-link="#contact">연락처</li>
       </ul>
     </nav>
 
