@@ -20,3 +20,11 @@ window.addEventListener('scroll', (e) => {
     navbar.classList.remove('navbar-dark');
   }
 });
+
+// 스크롤 내리면 홈 투명도 주기
+const home = document.querySelector('#home');
+const homeHeight = home.getBoundingClientRect().height;
+
+window.addEventListener('scroll', () => {
+  home.style.opacity = 1 - window.scrollY / homeHeight;
+});
