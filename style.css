@@ -17,6 +17,10 @@
   z-index: 10;
 }
 
+.navbar-dark {
+  opacity: 0.8;
+}
+
 .navbar__logo {
   display: flex;
   align-items: center;
@@ -327,7 +331,7 @@
 /* Contact */
 #contact.section {
   color: var(--color-dark-gray);
-  background-color: var(--color-dark-yellow);
+  background-color: var(--color-yellow);
 }
 
 .section__container h2 {
