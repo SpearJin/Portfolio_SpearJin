@@ -358,3 +358,27 @@
   transform: scale(1.1);
   color: var(--color-dark-gray);
 }
+
+/* Arrow */
+.arrow {
+  position: fixed;
+  right: 0.8rem;
+  bottom: 0.8rem;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: var(--color-dark-white);
+  opacity: 0.7;
+  opacity: 1;
+  transition: all var(--ani-duration-sec) ease-in;
+}
+
+.arrow.hidden {
+  pointer-events: none;
+  opacity: 0;
+}
+
+.arrow i {
+  color: var(--color-white);
+  font-size: 28px;
+}
