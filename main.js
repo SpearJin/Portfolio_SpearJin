@@ -10,7 +10,7 @@ navbarMenu.addEventListener('click', (e) => {
   const target = e.target;
   const link = target.dataset.link;
   const chosen = document.querySelector(link);
-  chosen.scrollIntoView({ behavior: 'smooth' });
+  chosen.scrollIntoView({ behavior: 'smooth', block: 'center' });
 });
 
 window.addEventListener('scroll', (e) => {
