@@ -46,7 +46,9 @@ function scrollInto(link) {
   link.scrollIntoView({ behavior: 'smooth', block: 'center' });
 }
 
+// 프로젝트 필터링
 const workBtn = document.querySelector('.work__categories');
+const projectContainer = document.querySelector('.projects');
 const projects = document.querySelectorAll('.project');
 
 workBtn.addEventListener('click', (e) => {
@@ -56,4 +58,18 @@ workBtn.addEventListener('click', (e) => {
 
   select.classList.remove('selected');
   target.classList.add('selected');
+
+  const filter = target.dataset.filter || target.parentNode.dataset.filter;
+
+  projectContainer.classList.add('ani-out');
+  setTimeout(() => {
+    for (let i = 0; i < projects.length; i++) {
+      if (filter === '*' || filter === projects[i].dataset.type) {
+        projects[i].style.display = 'block';
+      } else {
+        projects[i].style.display = 'none';
+      }
+    }
+    projectContainer.classList.remove('ani-out');
+  }, 500);
 });
