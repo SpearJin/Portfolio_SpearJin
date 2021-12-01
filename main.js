@@ -45,3 +45,15 @@ arrow.addEventListener('click', () => {
 function scrollInto(link) {
   link.scrollIntoView({ behavior: 'smooth', block: 'center' });
 }
+
+const workBtn = document.querySelector('.work__categories');
+const projects = document.querySelectorAll('.project');
+
+workBtn.addEventListener('click', (e) => {
+  const select = document.querySelector('.selected');
+  const target =
+    e.target.nodeName === 'BUTTON' ? e.target : e.target.parentNode;
+
+  select.classList.remove('selected');
+  target.classList.add('selected');
+});
